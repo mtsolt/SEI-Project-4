@@ -9,6 +9,8 @@ psycopg2-binary = "*"
 pylint = "*"
 autopep8 = "*"
 pyjwt = "*"
+djangorestframework = "*"
+datetime = "*"
 
 [dev-packages]
 

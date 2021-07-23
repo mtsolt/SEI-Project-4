@@ -214,5 +214,23 @@
     "conservation_status": "LC",
     "about": "NA"
   }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 17,
+  "fields": {
+    "common_name": "SPLUTEY SPLOAD",
+    "scientific_name": "Epidalea calamita",
+    "type": "toad",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d",
+    "native": "native",
+    "identification": "At about 8cm long, the natterjack toad is smaller than the common toad. It is green, brown or cream in colour and has dark ‘warts’ on its back often with yellow or red tips. It has an obvious pale cream or yellow stripe along its back and a green iris with oval, horizontal pupil. It has short legs and tends to run rather than walk or hop.",
+    "fact": "Despite being found near ponds, the natterjack toad is a poor swimmer.",
+    "distribution": "There are now only about sixty sites in Britain where they’re found, particularly in coastal dunes along the Merseyside coast and on the Scottish Solway, on the WWT Caerlaverock reserve. Once common on the Surrey and Hampshire heaths and around the coast of East Anglia, sadly only one or two colonies now remain.",
+    "life_cycle": "Natterjack toads spend the winter buried down in mud and under logs and rocks. They emerge in March/April and breed from April onwards into early summer. Females lay single strings of spawn rather than the double strings like the common toad. One clutch can contain up to 7,500 eggs.",
+    "protection": "Natterjack toads are protected under UK law making it illegal to kill, injure, capture, disturb or sell them, or to damage or destroy their habitats. It is a UK Biodiversity Action Plan priority species. They are also a European Protected Species under Annex IV of the European Habitats Directive",
+    "conservation_status": "LC",
+    "about": "Threatened by the loss of coastal habitats, the rare natterjack toad is now found at just a few locations in England and Scotland like WWT Caerlaverock. You can find them in shallow, ephemeral pools on sand dunes, heaths and marshes where they need the warmer water to successfully breed. On quiet spring nights, their loud rasping croak can be heard up to 2km away as the males all sing together to attract females."
+  }
 }
 ]
