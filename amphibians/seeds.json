@@ -7,7 +7,14 @@
     "scientific_name": "Triturus cristatus",
     "type": "newt",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e",
-    "native": "native"
+    "native": "native",
+    "identification": "At up to 15 cm long, the great crested newt is our biggest newt and is almost black in colour with spotted flanks and a striking, orange belly. It has warty skin and males have a long, wavy crest along the body and tail during breeding season. Males have a white flash on the tail and females a yellow/orange one.",
+    "fact": "The pattern of black spots they sport on their bellies is as unique as our fingerprints.",
+    "distribution": "Widely distributed across lowland England and Wales, but this distribution is extremely patchy. They’ve been recorded at WWT Slimbridge, Washington and Llanelli. They’re absent from Ireland and have disappeared from many sites across Europe.",
+    "life_cycle": "Newts breed in the spring, favouring large ponds with lots of weeds and no fish, but spend the rest of the year feeding on invertebrates in woodland, hedgerows, marshes and tussocky grassland. During the mating season, as well as their distinctive crests, males also woo females with an extravagant courtship display; they stand on their front legs, arch their back and wave their tail around as if they’re dancing. The female lays around 300 eggs, one by one, folded inside the leaves of aquatic plants. They hibernate underground among tree roots and in old walls.",
+    "protection": "Great crested newts are protected under UK law making it illegal to kill, injure, capture, disturb or sell them, or to damage or destroy their habitats. It is a UK Biodiversity Action Plan priority species.",
+    "conservation_status": "LC",
+    "about": "The UK’s populations of the great crested newt are internationally important. They’re under threat from habitat loss and intensification of farming practices."
   }
 },
 {
@@ -18,7 +25,194 @@
     "scientific_name": "Epidalea calamita",
     "type": "toad",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d",
-    "native": "native"
+    "native": "native",
+    "identification": "At about 8cm long, the natterjack toad is smaller than the common toad. It is green, brown or cream in colour and has dark ‘warts’ on its back often with yellow or red tips. It has an obvious pale cream or yellow stripe along its back and a green iris with oval, horizontal pupil. It has short legs and tends to run rather than walk or hop.",
+    "fact": "Despite being found near ponds, the natterjack toad is a poor swimmer.",
+    "distribution": "There are now only about sixty sites in Britain where they’re found, particularly in coastal dunes along the Merseyside coast and on the Scottish Solway, on the WWT Caerlaverock reserve. Once common on the Surrey and Hampshire heaths and around the coast of East Anglia, sadly only one or two colonies now remain.",
+    "life_cycle": "Natterjack toads spend the winter buried down in mud and under logs and rocks. They emerge in March/April and breed from April onwards into early summer. Females lay single strings of spawn rather than the double strings like the common toad. One clutch can contain up to 7,500 eggs.",
+    "protection": "Natterjack toads are protected under UK law making it illegal to kill, injure, capture, disturb or sell them, or to damage or destroy their habitats. It is a UK Biodiversity Action Plan priority species. They are also a European Protected Species under Annex IV of the European Habitats Directive",
+    "conservation_status": "LC",
+    "about": "Threatened by the loss of coastal habitats, the rare natterjack toad is now found at just a few locations in England and Scotland like WWT Caerlaverock. You can find them in shallow, ephemeral pools on sand dunes, heaths and marshes where they need the warmer water to successfully breed. On quiet spring nights, their loud rasping croak can be heard up to 2km away as the males all sing together to attract females."
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 5,
+  "fields": {
+    "common_name": "Common Toad",
+    "scientific_name": "Bufo bufo",
+    "type": "toad",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Bufo_bufo_sitting-Iric2006.jpg/1024px-Bufo_bufo_sitting-Iric2006.jpg",
+    "native": "native",
+    "identification": "Common toads vary from dark brown, grey and olive green to sandy coloured. They have broad, squat bodies and unlike the common frog they have warty skin.They also tend to walk or crawl rather than hop. Females are larger than males at 13cm long. They have a high pitched rough ‘qwark-qwark-qwark’ call. Toadlets hatch from strings of spawn. Long strings of spawn are laid around aquatic plants with two rows of eggs per string.",
+    "fact": "If more than 1,000 toads are known to hop across a road in a particular spot, it’s dubbed a ‘toad crossing’. Larger toads may eat slow worms, small grass snakes and even harvest mice.",
+    "distribution": "Common toads tend to live away from water, except when mating, spending much of their time in woodlands, gardens, hedgerows and tussocky grassland. They like to excavate a shallow burrow where they return after foraging for prey. They tend to breed in larger, deeper ponds than common frogs, but are still frequent visitors to gardens.They’re found almost everywhere except the Scottish islands, Northern Ireland, Isle of Man, Isles of Scilly and most of the Channel Islands.",
+    "life_cycle": " The common toad hibernates over winter, often under log piles, stones or even in old flower pots. Then on the first warm, damp evening of the year, often around St Valentine’s Day they migrate en masse back to their breeding ponds. It’s then that they’re most at risk. With busy roads often blocking migration paths, it’s estimated that twenty tonnes of unlucky toads are killed on the UK’s roads every year. During mating the male clutches the female from behind in a tight embrace. Adults spend little time in water and after breeding move away from the pond, remaining in one area for long periods over the summer hunting for slugs and spiders and insects at night. They can live up to 12 years.",
+    "protection": "In Britain the common toad is protected by law from sale and trade. It is a UK Biodiversity Action Plan priority species.",
+    "conservation_status": "LC",
+    "about": "The common toad, as its name suggests, is widespread and common across mainland Britain. Famous for migrating en-masse to its breeding ponds, it is a gardener’s friend, slurping up slugs and snails. To deter predators it secretes a toxin from its skin and puffs itself up."
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 6,
+  "fields": {
+    "common_name": "Common frog",
+    "scientific_name": "Rana temporaria",
+    "type": "frog",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/European_Common_Frog_Rana_temporaria.jpg/1024px-European_Common_Frog_Rana_temporaria.jpg",
+    "native": "native",
+    "identification": "The common frog is our most recognisable amphibian. It has smooth skin and long legs that it uses to hop or jump rather than walk. Females can grow up to 13cm long, with males being slightly smaller. They vary enormously in colour, but are usually olive-green or brown, but can be red or yellow. They have dark patches on the back, stripes on their back legs and a dark mask behind the eye. Common frog tadpoles are faintly speckled with gold/brown compared to common toad tadpoles which are black. Unlike the invasive marsh frog, they don't have double air sacks either side of their head.",
+    "fact": "Common frogs are able to lighten or darken their skin to match their surroundings.",
+    "distribution": "You’ll find common frogs in almost any habitat where suitable breeding ponds are nearby. They breed in shallow water like puddles, ponds, lakes and canals. In urban areas, garden ponds are extremely important for common frogs.",
+    "life_cycle": "Common frogs spend the winter sheltering under rocks or in compost heaps, or underwater buried in mud and vegetation until they emerge in spring to breed. They don’t hibernate as such and may come out during milder winter weather to forage. Males have a single vocal sac under the chin and attract females with a soft repetitive croak. They also have ‘nuptial pads’ on their front feet which help them grip onto females during the breeding season. Common frogs deposit ‘rafts’ of spawn from as early as January through to September. Each clump can often contain up to 2,000 eggs with individual eggs surrounded by a clear jelly capsule. In summer common frogs can be found around ponds or in damp areas attempting to cool off. This is also the time of year they’re most at risk from the frog disease ranivirus.",
+    "protection": "The Common frog and its spawn is protected by law from trade and sale.",
+    "conservation_status": "LC",
+    "about": "The common frog is found throughout Britain and Ireland, although its numbers are thought to be in decline because of the disappearance of its usual breeding places and the introduction of disease. It’s a regular visitor to our garden ponds where it helps keep slugs and snails at bay."
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 7,
+  "fields": {
+    "common_name": "Pool frog",
+    "scientific_name": "Pelophylax lessonae",
+    "type": "frog",
+    "image": "https://www.wwt.org.uk/uploads/images/2019-05-09/1557427622-shutterstock-309746087.jpg",
+    "native": "native",
+    "identification": "Adult females can grow up to 9cm in length, with males significantly smaller. They are brown or green with dark blotches across the back and a cream or yellow dorsal stripe. They have a pair of ridges that run from the eyes down the back. Their call is often likened to ducks quacking or rapid laughter. The males have air sacks which they can puff out on either side of their heads, unlike the common frog but similar to the non-native marsh frog.",
+    "fact": "Pool frogs can often be found basking in sunshine on even the very hottest days.",
+    "distribution": "Threatened by the drainage of fenlands, they’re still prevalent in Europe and are naturally found in damp densely vegetated areas, where they prefer slow moving rivers or ponds and marshes.",
+    "life_cycle": "During winter the pool frog hibernates on land. Breeding is much later in the year than the common toad and coincides with the onset of warm nights in May/June. The male makes a loud call generated by a pair of inflatable pouches on either side of its mouth. Spawn is laid in ‘rafts’ that are typically smaller than those of the common frog. Individual eggs are brown on top and yellowish underneath. Pool frogs spend much of the year in or near water.",
+    "protection": "Pool frogs are protected under UK law making it illegal to kill, injure, capture, disturb or sell them, or to damage or destroy their habitats. It is a UK Biodiversity Action Plan priority species.",
+    "conservation_status": "LC",
+    "about": "Thought to be extinct in the mid-90s, the pool frog has since been reintroduced at a single site in Norfolk. Research has shown that pool frogs have regional ‘accents’ to their calls and that English pool frogs belong to a distinct and very rare group of northern pool frogs also found in Sweden and Norway."
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 8,
+  "fields": {
+    "common_name": "Smooth newt",
+    "scientific_name": "Lissotriton vulgaris",
+    "type": "newt",
+    "image": "https://www.wwt.org.uk/uploads/images/2019-05-09/1557426651-717x403-common-newt.jpg",
+    "native": "native",
+    "identification": "Smooth newts can grow up to 10 cm long. Their skin varies in shades of grey or brown, with a yellow or orange belly, usually with black spots or blotches. Males have a wavy crest along their back during the breeding season.",
+    "fact": "Smooth newts eat small crustaceans like shrimps, molluscs and tadpoles when in the water.",
+    "distribution": "The smooth newt is the UK’s most widespread newt species being common and widespread throughout the UK and Ireland.",
+    "life_cycle": "Smooth newts spend the winter sheltering under rocks, in compost heaps or buried down in mud and occasionally they’ll overwinter in ponds. Adults emerge from their overwintering sites in early spring and head to a pond to breed.Males perform elaborate courtship dances enticing females by wafting a glandular secretion. The greyish brown eggs are deposited individually on the leaves of pond plants. Larvae hatch out two to four weeks later and have feathery gills, distinguishing them from frog and toad tadpoles.",
+    "protection": "In England, Scotland and Wales the smooth newt is protected by law from sale and trade. In Northern Ireland they’re fully protected, making them illegal to kill, injure, capture, disturb, possess or trade.",
+    "conservation_status": "LC",
+    "about": "The smooth newt, also known as the ‘common newt’ is another firm favourite of the garden pond. It looks very similar to the palmate newt but is more widespread. On land their skin takes on a velvety appearance and they’re sometimes mistaken for lizards."
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 9,
+  "fields": {
+    "common_name": "Palmate newt",
+    "scientific_name": "Lissotriton helveticus",
+    "type": "newt",
+    "image": "https://www.wwt.org.uk/uploads/images/2019-05-09/1557427882-shutterstock-169236344.jpg",
+    "native": "native",
+    "identification": "Our smallest newt, the palmate newt can grow up to 9 cm long.Its skin is smooth and brown, grey or green. It has a peachy yellow belly with a few spots, but none on the throat, unlike the smooth newt which has a spotted throat. During breeding the males grow distinctive black webbing on their back feet.",
+    "fact": "The palmate newt is named after the black webbing that develops on the males back feet during season.",
+    "distribution": "Very patchily distributed and found on heathland in the south and west and on moorland and bogs in the north. Quite common in Scotland, Wales and southern England, but absent from much of central England. They can tolerate drier conditions than smooth newts so can be found further away from water.",
+    "life_cycle": "Palmate newts spend the winter sheltering under rocks, in compost heaps or buried down in mud. They don’t hibernate as such and may come out to forage in milder weather. They emerge in spring and head to a pond to breed. Adult newts spend quite a lot of time in the water at this time and will hunt frog tadpoles.",
+    "protection": "in Britain the palmate newt is protected by law from sale and trade.",
+    "conservation_status": "LC",
+    "about": "The palmate newt looks very similar to the smooth newt, but prefers shallower ponds on acidic soils. As such it’s more likely to be found in upland areas and on heaths and moorlands than other newt species. Its numbers are thought to be declining due to habitat loss."
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 10,
+  "fields": {
+    "common_name": "Midwife Toad",
+    "scientific_name": "Alytes obstetricans",
+    "type": "toad",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/AlytesObstet.jpg/1024px-AlytesObstet.jpg",
+    "native": "non-native",
+    "identification": "NA",
+    "fact": "NA",
+    "distribution": "NA",
+    "life_cycle": "NA",
+    "protection": "NA",
+    "conservation_status": "LC",
+    "about": "blitz"
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 11,
+  "fields": {
+    "common_name": "Green frogs",
+    "scientific_name": "Pelophylax ridibundus, P. esculentus",
+    "type": "frog",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/2017.06.11.-03-Anglerteiche-Rimbach--Seefrosch.jpg/1024px-2017.06.11.-03-Anglerteiche-Rimbach--Seefrosch.jpg",
+    "native": "non-native",
+    "identification": "NA",
+    "fact": "NA",
+    "distribution": "NA",
+    "life_cycle": "NA",
+    "protection": "NA",
+    "conservation_status": "LC",
+    "about": "NA"
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 12,
+  "fields": {
+    "common_name": "Italian crested newt",
+    "scientific_name": "Triturus carnifex",
+    "type": "newt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Alpen_Kammmolch%2C_Triturus_carnifex_7.JPG/1024px-Alpen_Kammmolch%2C_Triturus_carnifex_7.JPG",
+    "native": "non-native",
+    "identification": "NA",
+    "fact": "NA",
+    "distribution": "NA",
+    "life_cycle": "NA",
+    "protection": "NA",
+    "conservation_status": "LC",
+    "about": "NA"
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 13,
+  "fields": {
+    "common_name": "Alpine newt",
+    "scientific_name": "Mesotriton alpestris",
+    "type": "newt",
+    "image": "https://www.wwt.org.uk/uploads/images/2019-05-09/1557427882-shutterstock-169236344.jpg",
+    "native": "non-native",
+    "identification": "NA",
+    "fact": "NA",
+    "distribution": "NA",
+    "life_cycle": "NA",
+    "protection": "NA",
+    "conservation_status": "LC",
+    "about": "NA"
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 14,
+  "fields": {
+    "common_name": "Bull frog",
+    "scientific_name": "Lithobates catesbeianus ",
+    "type": "frog",
+    "image": "https://www.arc-trust.org/GetImage.aspx?IDMF=0b8d5166-be78-4730-ba3e-e15006819bd5&w=350&h=254&src=mc",
+    "native": "non-native",
+    "identification": "NA",
+    "fact": "NA",
+    "distribution": "NA",
+    "life_cycle": "NA",
+    "protection": "NA",
+    "conservation_status": "LC",
+    "about": "NA"
   }
 }
 ]
