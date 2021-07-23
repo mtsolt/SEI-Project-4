@@ -1,0 +1,24 @@
+[
+{
+  "model": "amphibians.amphibian",
+  "pk": 3,
+  "fields": {
+    "common_name": "Great Crested Newt",
+    "scientific_name": "Triturus cristatus",
+    "type": "newt",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e",
+    "native": "native"
+  }
+},
+{
+  "model": "amphibians.amphibian",
+  "pk": 4,
+  "fields": {
+    "common_name": "Natterjack Toad",
+    "scientific_name": "Epidalea calamita",
+    "type": "toad",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d",
+    "native": "native"
+  }
+}
+]

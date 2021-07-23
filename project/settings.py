@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rv-y1dmpxp=hmdlpl8d0#xd46+o_ogxnysz(08byxp25=l$+&1'
+SECRET_KEY = 'django-insecure-7l%$#8-@)cr^v*!-)wfb!0r)f9wim1no+*c837r)zl@5#rop5u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,10 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'apphibian',
-    'jwt_auth',
-    
+    'amphibians',
 ]
 
 MIDDLEWARE = [
@@ -129,15 +126,3 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-AUTH_USER_MODEL = 'jwt_auth.User'
-
-REST_FRAMEWORK = {
-  'DEFAULT_RENDERER_CLASSES': [
-      'rest_framework.renderers.JSONRenderer',
-      'rest_framework.renderers.BrowsableAPIRenderer',
-  ],
-  'DEFAULT_AUTHENTICATION_CLASSES': [
-      'jwt_auth.authentication.JWTAuthentication'
-  ],
-}
