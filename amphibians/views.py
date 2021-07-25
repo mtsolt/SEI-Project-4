@@ -6,6 +6,7 @@ from rest_framework.exceptions import NotFound
 
 from .models import Amphibian
 from .serializers.common import AmphibianSerializer
+from .serializers.populated import PopulatedAmphibianSerializer
 
 
 class AmphibianListView(APIView):
@@ -13,7 +14,7 @@ class AmphibianListView(APIView):
 
     def get(self, _request):
         amphibians = Amphibian.objects.all()
-        serialized_amphibians = AmphibianSerializer(amphibians, many=True)
+        serialized_amphibians = PopulatedAmphibianSerializer(amphibians, many=True)
         return Response(serialized_amphibians.data, status=status.HTTP_200_OK)
 
     def post(self, request):
@@ -35,7 +36,7 @@ class AmphibianDetailView(APIView):
 
     def get(self, _request, pk):
         amphibian = self.get_amphibian(pk=pk)
-        serialized_amphibian = AmphibianSerializer(amphibian)
+        serialized_amphibian = PopulatedAmphibianSerializer(amphibian)
         return Response(serialized_amphibian.data, status=status.HTTP_200_OK)
 
 

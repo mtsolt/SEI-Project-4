@@ -7,3 +7,4 @@ class User(AbstractUser):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     profile_picture = models.CharField(max_length=300)
+    verified = models.BooleanField(default=False)

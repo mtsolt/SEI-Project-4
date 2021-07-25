@@ -1,0 +1,12 @@
+[
+{
+  "model": "sightings.sighting",
+  "pk": 1,
+  "fields": {
+    "image": "asdasd",
+    "number_of": 3,
+    "amphibian": 3,
+    "location": 1
+  }
+}
+]

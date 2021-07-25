@@ -6,13 +6,13 @@ from rest_framework.exceptions import NotFound
 
 from .models import Survey
 from .serializers.common import SurveySerializer
-
+from .serializers.populated import PopulatedSurveySerializer
 
 class SurveyListView(APIView):
     
     def get(self, _request):
         surveys = Survey.objects.all()
-        serialized_surveys = SurveySerializer(surveys, many=True)
+        serialized_surveys = PopulatedSurveySerializer(surveys, many=True)
         return Response(serialized_surveys.data, status=status.HTTP_200_OK)
 
     def post(self, request):
@@ -33,7 +33,7 @@ class SurveyDetailView(APIView):
 
     def get(self, _request, pk):
         survey = self.get_survey(pk=pk)
-        serialized_survey = SurveySerializer(survey)
+        serialized_survey = PopulatedSurveySerializer(survey)
         return Response(serialized_survey.data, status=status.HTTP_200_OK)
 
 
@@ -49,5 +49,3 @@ class SurveyDetailView(APIView):
             updated_survey.save()
             return Response(updated_survey.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_survey.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
-
-
