@@ -2,13 +2,16 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.exceptions import PermissionDenied
+
 
 from .models import Sighting
 from .serializers.common import SightingSerializer
 
 
-
 class SightingListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )    
 
     def get(self, _request):
         sightings = Sighting.objects.all()
@@ -25,6 +28,8 @@ class SightingListView(APIView):
 
 class SightingDetailView(APIView):
     
+    # NEED TO ADD ANOTHER / DIFFERENT PERMISSION CLASS - ALLOW MORE THAN JUST THE OWNER TO EDIT IT
+    
     def get_sighting(self, pk):
         try:
             return Sighting.objects.get(pk=pk)
@@ -36,16 +41,24 @@ class SightingDetailView(APIView):
         serialized_sighting = SightingSerializer(sighting)
         return Response(serialized_sighting.data, status=status.HTTP_200_OK)
 
-
-    def delete(self, _request, pk):
-        sighting_to_delete = self.get_sighting(pk=pk)
+    def delete(self, request, pk):
+        try:
+            sighting_to_delete = self.get_sighting(pk=pk)
+        except Sighting.DoesNotExist:
+            raise NotFound()
+        if sighting_to_delete.owner != request.user:
+            raise PermissionDenied()
         sighting_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
     def put(self, request, pk):
-        sighting_to_edit = self.get_sighting(pk=pk)
+        try:
+            sighting_to_edit = self.get_sighting(pk=pk)
+        except Sighting.DoesNotExist:
+            raise NotFound()
         updated_sighting = SightingSerializer(sighting_to_edit, data=request.data)
-        if updated_sighting.is_valid():
-            updated_sighting.save()
-            return Response(updated_sighting.data, status=status.HTTP_202_ACCEPTED)
-        return Response(updated_sighting.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+        if updated_sighting.owner != request.user:
+            raise PermissionDenied()
+        updated_sighting.save()
+        return Response(updated_sighting.data, status=status.HTTP_202_ACCEPTED)
+        # return Response(updated_sighting.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)

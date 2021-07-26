@@ -15,4 +15,9 @@ class Sighting(models.Model):
         related_name = "Amphibian_Found",
         on_delete = models.CASCADE
     )
-    
+
+
+
+    def  __str__(self):
+        return f"Sighting: {self.number_of} {self.amphibian}"
+        

@@ -38,10 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'jwt_auth',
     'amphibians',
     'surveys',
-    'sightings',
-    'jwt_auth'
+    'sightings'
+    # 'counties',S
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'apphibians',
+        'NAME': 'apphibihunt',
         'HOST': 'localhost',
         'PORT': 5432
     }

@@ -3,8 +3,18 @@
   "model": "sightings.sighting",
   "pk": 1,
   "fields": {
-    "image": "asdasd",
-    "number_of": 3,
+    "image": "asd",
+    "number_of": 2,
+    "amphibian": 5,
+    "location": 1
+  }
+},
+{
+  "model": "sightings.sighting",
+  "pk": 2,
+  "fields": {
+    "image": "asd",
+    "number_of": 4,
     "amphibian": 3,
     "location": 1
   }

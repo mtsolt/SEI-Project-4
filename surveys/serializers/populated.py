@@ -1,5 +1,9 @@
 from .common import SurveySerializer
-from sightings.serializers.common import SightingSerializer
+from sightings.serializers.populated import PopulatedSightingSerializer
+# from counties.serializers.common import CountySerializer
+
 
 class PopulatedSurveySerializer(SurveySerializer):
-    Amphibian_Found = SightingSerializer(many=True)
+    Amphibian_Found = PopulatedSightingSerializer(many=True)
+    # county = CountySerializer(many=True)
+    

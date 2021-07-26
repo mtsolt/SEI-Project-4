@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound 
-
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Amphibian
 from .serializers.common import AmphibianSerializer
@@ -10,7 +10,7 @@ from .serializers.populated import PopulatedAmphibianSerializer
 
 
 class AmphibianListView(APIView):
-    
+    # FIGURE OUT THE PERMISSION CLASS FOR THIS - IDEALLY, ANYONE CAN VIEW, BUT ONLY ADMIN CAN ADJUST/DELETE <<<https://www.django-rest-framework.org/api-guide/permissions/#how-permissions-are-determined
 
     def get(self, _request):
         amphibians = Amphibian.objects.all()
@@ -26,7 +26,7 @@ class AmphibianListView(APIView):
         return Response(amphibian_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class AmphibianDetailView(APIView):
-    
+    # FIGURE OUT THE PERMISSION CLASS FOR THIS - IDEALLY, ANYONE CAN VIEW INDIVIUAL, BUT ONLY ADMIN CAN ADJUST/DELETE <<<https://www.django-rest-framework.org/api-guide/permissions/#how-permissions-are-determined
 
     def get_amphibian(self, pk):
         try:

@@ -22,4 +22,5 @@ urlpatterns = [
     path('amphibians/', include ('amphibians.urls')),
     path('surveys/', include ('surveys.urls')),
     path('sightings/', include ('sightings.urls')),
+    path('auth/', include ('jwt_auth.urls')),
 ]

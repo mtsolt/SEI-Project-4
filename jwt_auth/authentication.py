@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
-User = get_user_model
+User = get_user_model()
 
 class JWTAuthentication(BasicAuthentication):
 
