@@ -1,16 +1,27 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import About from './components/About'
+import Home from './components/Home'
 
-function App() {
-  React.useEffect(() => {
-    const getData = async () => {
-      const res = await fetch('/api/endpoint') // * <-- replace with your endpoint
-      const data = await res.json()
-      console.log(data)
-    }
-    getData()
-  })
 
-  return <h1>Hello World</h1>
+const App = () => {
+
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Switch>
+        <Route path = "/about">
+          <About />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
+
+
 
 export default App
