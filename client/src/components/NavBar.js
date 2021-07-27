@@ -38,16 +38,16 @@ const NavBar = () => {
                   <LinkContainer to='/about'>
                     <Nav.Link href="#about">About</Nav.Link>
                   </LinkContainer>
-                  {/* <LinkContainer to='/activities'>
-                    <Nav.Link href="#activities">Activities</Nav.Link>
+                  <LinkContainer to='/sightings'>
+                    <Nav.Link href="#sightings">Sightings</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to='/groups'>
-                    <Nav.Link href="#groups">Groups</Nav.Link>
-                  </LinkContainer> */}
-                  <LinkContainer to='/Login'>
+                  <LinkContainer to='/survey'>
+                    <Nav.Link href="#survey">Survey</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to='/login'>
                     <Nav.Link href="#login" onClick={handleShow}>Login</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to='/Register'>
+                  <LinkContainer to='/register'>
                     <Nav.Link href="#register" onClick={handleShow}>Register</Nav.Link>
                   </LinkContainer>
                 </Nav>
@@ -66,16 +66,19 @@ const NavBar = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>{location.pathname === '/Login' ? 'Login Now' : 'Register Now'}</Modal.Title>
+            <Modal.Title>{location.pathname === '/login' ? 'Login Now' : 'Register Now'}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>{location.pathname === '/Login' ? 'Please enter your details now' : 'Please sign up to join our survey!'} </Modal.Body>
+          <Modal.Body>{location.pathname === '/login' ? 'Please enter your details now' 
+
+            : 'Please sign up to join our survey!'} </Modal.Body>
           <Modal.Footer>
-            <Link onClick={() => handleClose()} to={location.pathname === '/Login' ? '/Login' : '/Register'}>User</Link>
+            <Link onClick={() => handleClose()} to={location.pathname === '/login' ? '/auth/login' : '/auth/register'}>Log in Here</Link>
+            <Link onClick={() => handleClose()} to={location.pathname === '/register' ? '/auth/register' : '/auth/login'}>Register an account Here</Link>
           </Modal.Footer>
         </Modal>
       </section>
-    
     </>
+    
   )
 }
 
