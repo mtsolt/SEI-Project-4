@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Col } from 'react-bootstrap'
 
 
 const About = () => {
@@ -21,9 +22,12 @@ const About = () => {
   }, [])
 
   console.log('errors>>>>', errors)
+  console.log('AMPHIBIANS', amphib)
   return (
     <>
-      <h1>THIS IS WHY WE DO WHAT WE DOOOOOOO</h1>
+      <Col></Col>
+      <Col md='1'><h1>THIS IS WHY WE DO WHAT WE DOOOOOOO</h1></Col>
+      <Col></Col>
     </>
 
   )

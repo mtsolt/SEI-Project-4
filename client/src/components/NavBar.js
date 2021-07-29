@@ -7,24 +7,27 @@ import Nav from 'react-bootstrap/Nav'
 import Modal from 'react-bootstrap/Modal'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router-dom'
+// import getPayload from './helpers/auth'
 
 
 
 
 const NavBar = () => {
-
-  
-
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
+
+
+
+
+
   return (
     <>
       <Navbar className="navbar-colour" Navbar bg="" variant="dark" >
         <Container>
           <Col></Col>
-          <Col>
+          <Col controlId="navbarBasic">
             <div className="logo-nav-items">
               <div className="logo">
                 AMPHIBIHUNT
@@ -43,6 +46,9 @@ const NavBar = () => {
                   </LinkContainer>
                   <LinkContainer to='/survey'>
                     <Nav.Link href="#survey">Survey</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to='/map'>
+                    <Nav.Link href="#map">Map</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to='/login'>
                     <Nav.Link href="#login" onClick={handleShow}>Login</Nav.Link>

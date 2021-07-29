@@ -119,7 +119,8 @@ const Register = () => {
         {errors.last_name && <p className="help is-danger">{errors.last_name}</p>}
 
         <Form.Group className="mb-3" controlId="formBasicImage">
-          <ImageUploadField 
+          <Form.Label>Profile Picture (optional)</Form.Label>
+          <ImageUploadField
             value={formData.profile_picture}
             name="profile_picture"
             handleImageUrl={handleImageUrl}

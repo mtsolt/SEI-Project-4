@@ -19,7 +19,6 @@ export const ImageUploadField = ({ handleImageUrl, value }) => {
   return (
     <>
       <Form.Group className="mb-3" controlId="formBasicImage">
-        <Form.Label>Profile Picture (optional)</Form.Label>
         {value ?
           <div>
             <img src={value} alt="profilePicturePreview" />
