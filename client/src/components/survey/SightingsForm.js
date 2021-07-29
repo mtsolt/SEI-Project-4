@@ -16,7 +16,7 @@ const Sighting = () => {
     image3: '',
     number_of: '',
     amphibian: '',
-    location: '',
+    location: `${pk}`,
   })
   const [errors, setErrors] = useState({
     image: '',
@@ -82,7 +82,7 @@ const Sighting = () => {
             </Form.Select>
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicLocation">
+          {/* <Form.Group className="mb-3" controlId="formBasicLocation">
             <Form.Label>LOCATION</Form.Label>
             <Form.Control
               onChange={handleChange}
@@ -90,7 +90,7 @@ const Sighting = () => {
               name="location"
               placeholder="E.g. 1, 2, or maybe 5 or 10!"/>
           </Form.Group>
-          {errors.location && <p className="help is-danger">{errors.location}</p>}
+          {errors.location && <p className="help is-danger">{errors.location}</p>} */}
 
 
           <Form.Group className="mb-3" controlId="formBasicNumber">

@@ -1,6 +1,45 @@
+$primaryColor: #20c997;
+$accentColor: invert($primaryColor);
+
+@mixin flex-center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar-colour{
-  background:#1c5720;
+  background: $primaryColor;
   color: white;
+  min-height: 100px;
+}
+
+.mainPageSpace{
+  min-height: 100px;
+}
+
+.mainPageHero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainPageHeroSpace{
+  min-height: 50px;
+}
+
+.mainPageSpan{
+  color: $primaryColor;
+}
+
+.mainPageImage{
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+}
+
+.mainPageContentSpace{
+  min-height: 30px;
 }
 
 // .home {
