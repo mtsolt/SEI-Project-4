@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'amphibians',
     'surveys',
     'sightings'
-    # 'counties',S
+    # 'counties'
 ]
 
 MIDDLEWARE = [

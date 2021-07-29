@@ -11,7 +11,7 @@ const About = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('/api/amphibians/')
+        const { data } = await axios.get('/api/surveys/')
         console.log(data)
         setAmphib(data)
       } catch (err) {

@@ -7,7 +7,7 @@ import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import Survey from './components/survey/Survey'
 import SingleSurvey from './components/survey/SingleSurvey'
-import Sighting from './components/survey/Sightings'
+import SightingsForm from './components/survey/SightingsForm'
 import Map from './components/Map'
 import AmphibianShow from './components/amphibian/AmphibianShow'
 
@@ -25,7 +25,7 @@ const App = () => {
           <AmphibianShow />
         </Route>
         <Route path = "/sightings">
-          <Sighting />
+          <SightingsForm />
         </Route>
         <Route path = "/surveys/:pk/">
           <SingleSurvey />

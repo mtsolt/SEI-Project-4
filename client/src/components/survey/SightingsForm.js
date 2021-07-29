@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { Form, Button, Container, Col } from 'react-bootstrap'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom'
@@ -7,6 +8,7 @@ import { getTokenFromLocalStorage } from '../helpers/auth'
 import { ImageUploadField } from '../ImageUploadField'
 
 const Sighting = () => {
+  const { pk } = useParams()
   const history = useHistory()
   const [formData, setFormData] = useState({
     image: '',
@@ -36,26 +38,13 @@ const Sighting = () => {
     event.preventDefault()
     console.log('submitted')
     try {
-      await axios.post('/api/sightings/', formData,
+      const response = await axios.post('/api/sightings/', formData,
         {
           headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` },
         }
       )
-      useEffect(() => {
-        const getData = async () => {
-          try {
-            const { data } = await axios.get('/api/activities')
-            console.log('GROUPS', data)
-            setActivities(data)
-    
-          } catch (err) {
-            setHasError(true)
-            console.log('ERROR WHILE GETTING GROUP DATA', err)
-          }
-        }
-        getData()
-      }, [])
-      history.push('/surveys/')
+      console.log(response.data, 'response data')
+      history.push(`/surveys/${pk}`)
     } catch (err) {
       setErrors(err.response.data.errors)
       console.log('ERRORS>>>>', errors)

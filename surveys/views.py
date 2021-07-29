@@ -2,18 +2,15 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+# from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.exceptions import PermissionDenied
-
-
 from .models import Survey
 from .serializers.common import SurveySerializer
 from .serializers.populated import PopulatedSurveySerializer
 
 
 class SurveyListView(APIView):
-    permission_classes = (IsAuthenticatedOrReadOnly, )
-    
+    # permission_classes = (IsAuthenticatedOrReadOnly, )
     def get(self, _request):
         surveys = Survey.objects.all()
         serialized_surveys = PopulatedSurveySerializer(surveys, many=True)
@@ -28,9 +25,6 @@ class SurveyListView(APIView):
         return Response(survey_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class SurveyDetailView(APIView):
-    # NEED TO ADD ANOTHER / DIFFERENT PERMISSION CLASS - ALLOW MORE THAN JUST THE OWNER TO EDIT IT
-
-
     def get_survey(self, pk):
         try:
             return Survey.objects.get(pk=pk)

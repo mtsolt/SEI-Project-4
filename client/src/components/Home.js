@@ -28,7 +28,7 @@ const Home = () => {
     <Container fluid>
       <Row className="justify-content-md-center">
         <Col></Col>
-        <Col className="justify-content-center"><h1>Welcome to Amphibihunt!</h1></Col>
+        <Col className="justify-content-center"><h2>Welcome to Amphibihunt!</h2></Col>
         <Col></Col>
       </Row>
     </Container>

@@ -3,26 +3,26 @@ from django.db import models
 
 class Survey(models.Model):
     HABITAT_CHOICES=(
-    ('natpond', 'Natural Pond'),
-    ('manpond', 'Man-Made Pond'),
-    ('natstrean', 'Natural Stream'),
-    ('marsh', 'Marsh'),
-    ('river', 'River'),
+    ('1', 'Natural Pond'),
+    ('2', 'Man-Made Pond'),
+    ('3', 'Natural Stream'),
+    ('4', 'Marsh'),
+    ('5', 'River'),
     )
 
     LAND_CHOICES=(
-    ('wood', 'Woodland'),
-    ('field', 'Open Field'),
-    ('garden', 'Garden'),
-    ('urban', 'Urban'),
+    ('1', 'Woodland'),
+    ('2', 'Open Field'),
+    ('3', 'Garden'),
+    ('4', 'Urban'),
     )
 
     COUNTY_CHOICES=(
-    ('avo', 'Avon'),
-    ('bed', 'Bedfordshire'),
-    ('ber', 'Berkshire'),
-    ('buc', 'Buckinghamshire'),
-    ('cam', 'Cambridgeshire'),
+    ('1', 'Avon'),
+    ('2', 'Bedfordshire'),
+    ('3', 'Berkshire'),
+    ('4', 'Buckinghamshire'),
+    ('5', 'Cambridgeshire'),
     ('che', 'Cheshire'),
     ('cle', 'Cleveland'),
     ('cor', 'Cornwall'),
@@ -112,8 +112,8 @@ class Survey(models.Model):
 
     text = models.TextField(max_length=300)
     spotted_on = models.DateTimeField()
-    location_x = models.CharField(max_length=15)
-    location_y = models.CharField(max_length=15)
+    location_x = models.CharField(max_length=15, null=True, blank=True)
+    location_y = models.CharField(max_length=15, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     water_habitat = models.CharField(max_length= 15, choices=HABITAT_CHOICES, default='natpond')
     land_habitat = models.CharField(max_length= 15, choices=LAND_CHOICES, default='wood')

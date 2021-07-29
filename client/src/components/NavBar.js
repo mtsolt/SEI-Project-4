@@ -7,9 +7,9 @@ import Nav from 'react-bootstrap/Nav'
 import Modal from 'react-bootstrap/Modal'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router-dom'
+import Login from './auth/Login'
+// import Register from './components/auth/Register'
 // import getPayload from './helpers/auth'
-
-
 
 
 const NavBar = () => {
@@ -17,9 +17,6 @@ const NavBar = () => {
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
-
-
-
 
 
   return (
@@ -53,9 +50,9 @@ const NavBar = () => {
                   <LinkContainer to='/login'>
                     <Nav.Link href="#login" onClick={handleShow}>Login</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to='/register'>
+                  {/* <LinkContainer to='/register'>
                     <Nav.Link href="#register" onClick={handleShow}>Register</Nav.Link>
-                  </LinkContainer>
+                  </LinkContainer> */}
                 </Nav>
               </div>
             </div>
@@ -74,13 +71,13 @@ const NavBar = () => {
           <Modal.Header closeButton>
             <Modal.Title>{location.pathname === '/login' ? 'Login Now' : 'Register Now'}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>{location.pathname === '/login' ? 'Please enter your details now' 
+          <Modal.Body>{location.pathname === '/login' ? <Login /> 
 
             : 'Please sign up to join our survey!'} </Modal.Body>
-          <Modal.Footer>
-            <Link onClick={() => handleClose()} to={location.pathname === '/login' ? '/auth/login' : '/auth/register'}>Log in Here</Link>
-            <Link onClick={() => handleClose()} to={location.pathname === '/register' ? '/auth/register' : '/auth/login'}>Register an account Here</Link>
-          </Modal.Footer>
+          {/* <Modal.Footer> */}
+            {/* <Link onClick={() => handleClose()} to={location.pathname === '/login' ? '/auth/login' : '/auth/register'}>Log in Here</Link>
+            <Link onClick={() => handleClose()} to={location.pathname === '/register' ? '/auth/register' : '/auth/login'}>Register an account Here</Link> */}
+          {/* </Modal.Footer> */}
         </Modal>
       </section>
     </>

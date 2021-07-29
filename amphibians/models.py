@@ -43,5 +43,4 @@ class Amphibian(models.Model):
 
     def __str__(self):
         return f"{self.common_name} - {self.scientific_name}"
-
         

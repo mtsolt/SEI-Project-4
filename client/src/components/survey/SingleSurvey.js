@@ -5,7 +5,8 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 // import { getTokenFromLocalStorage, getPayload } from '../../helpers/auth'
 
-// import { Form, Button, Container, Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
+import SightingsForm from './SightingsForm'
 // import axios from 'axios'
 // import { useHistory } from 'react-router-dom'
 // import { getTokenFromLocalStorage } from '../helpers/auth'
@@ -38,6 +39,9 @@ const SingleSurvey = () => {
   return (
     <>
       SINGLE Survey
+      <Container>
+        <SightingsForm />
+      </Container>
     </>
   )
 }

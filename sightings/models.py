@@ -4,6 +4,8 @@ from django.db import models
 
 class Sighting(models.Model):
     image = models.CharField(max_length=200, default=None)
+    image2 = models.CharField(max_length=200, default=None, null=True, blank=True)
+    image3 = models.CharField(max_length=200, default=None, null=True, blank=True)
     number_of = models.PositiveIntegerField(default=None)
     amphibian = models.ForeignKey(
         "amphibians.Amphibian",
@@ -15,8 +17,6 @@ class Sighting(models.Model):
         related_name = "Amphibian_Found",
         on_delete = models.CASCADE
     )
-
-
 
     def  __str__(self):
         return f"Sighting: {self.number_of} {self.amphibian}"

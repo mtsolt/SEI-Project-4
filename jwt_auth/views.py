@@ -15,6 +15,7 @@ class RegisterView(APIView):
     def post(self, request):
         user_to_create = UserSerializer(data=request.data)
         if user_to_create.is_valid():
+            print(user_to_create)
             user_to_create.save()
             return Response({ 'message': 'Registration Succesful'}, status=status.HTTP_202_ACCEPTED)
         return Response(user_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
