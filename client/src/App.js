@@ -12,6 +12,8 @@ import Map from './components/Map'
 import AmphibianShow from './components/amphibian/AmphibianShow'
 
 
+
+
 const App = () => {
 
   return (
@@ -21,7 +23,7 @@ const App = () => {
         <Route path = "/map">
           <Map />
         </Route>
-        <Route path = "/amphibians/:pk/">
+        <Route path = "/amphibian/:pk/">
           <AmphibianShow />
         </Route>
         <Route path = "/sightings">

@@ -16,14 +16,23 @@ $accentColor: invert($primaryColor);
 .mainPageSpace{
   min-height: 100px;
 }
+.mainPageHeroSpace{
+  min-height: 50px;
+}
+.mainPageContentSpace{
+  min-height: 30px;
+}
 
 .mainPageHero{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.mainPageHeroSpace{
-  min-height: 50px;
+
+.btn-primary{
+  border-color: $primaryColor;
+  border-style: solid;
+  border-width: 5px;
 }
 
 .mainPageSpan{
@@ -38,9 +47,16 @@ $accentColor: invert($primaryColor);
   }
 }
 
-.mainPageContentSpace{
-  min-height: 30px;
+.amphibianIndex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.indexBuffer{
+  min-height: 20px;
+}
+
 
 // .home {
 //   display: flex;

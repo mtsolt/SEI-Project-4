@@ -21,7 +21,7 @@ const SingleSurvey = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`/api/surveys/${pk}`)
+        const { data } = await axios.get(`/api/surveys/${pk}/`)
         setSurvey(data)
         console.log('SURVEY...', survey)
       } catch (err) {
@@ -30,6 +30,7 @@ const SingleSurvey = () => {
       }
     }
     getData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pk])
 
   console.log('EXTERIOR SURVEY....', survey)
@@ -38,7 +39,7 @@ const SingleSurvey = () => {
 
   return (
     <>
-      SINGLE Survey
+      You submitted a survey in {survey.county}, on {survey.spotted_on}
       <Container>
         <SightingsForm />
       </Container>
