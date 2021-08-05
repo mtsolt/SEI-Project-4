@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Col, Row, Button, Figure } from 'react-bootstrap'
 import Map from './Map'
 
+{/* eslint-disable */}
 
 const Home = () => {
   const [surveys, setSurveys] = useState('')
@@ -95,7 +96,7 @@ const Home = () => {
           <h4>Amphibians are <span className="mainPageSpan">incredibly important</span> wetlands animals.
             They act as both <span className="mainPageSpan">predator and prey</span>, eating pest insects and invertebrates like slugs and snails, as well as providing <span className="mainPageSpan">vital food</span> for birds and other animals like otters, badgers and even hedgehogs.</h4>
           <div className="mainPageContentSpace"></div>
-          <h4>The loss and degradation of wetland habitat has hit amphibians hard, with 40% of species declining worldwide according to a 2019 UN report, and the UK is no exception. Unfortunately, we just <span className="mainPageSpan"> don`&apos`t know </span> what the status of amphibians in the UK really is.</h4>
+          <h4>The loss and degradation of wetland habitat has hit amphibians hard, with 40% of species declining worldwide according to a 2019 UN report, and the UK is no exception. Unfortunately, we just <span className="mainPageSpan"> don't know </span> what the status of amphibians in the UK really is.</h4>
         </Col>
       </Row>
       <div className="mainPageContentSpace"></div>
@@ -126,7 +127,7 @@ const Home = () => {
       </Row>
       <Row className="justify-content-center">
         <Col xs="4" sm="9">
-          <h4>It`&apos`s <span className="mainPageSpan">simple</span>, all you need to do is find amphibians in the wild, and <span className="mainPageSpan">report</span> your findings as a survey. These are our latest surveys - are there any near you?</h4>
+          <h4>It's <span className="mainPageSpan">simple</span>, all you need to do is find amphibians in the wild, and <span className="mainPageSpan">report</span> your findings as a survey. These are our latest surveys - are there any near you?</h4>
           <div className="mainPageContentSpace"></div>
           <Row className="justify-content-center">
             <Col xs="4" sm="11">

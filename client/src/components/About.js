@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Col, Row, Container, Figure } from 'react-bootstrap'
 import AmphibianCard from './amphibian/AmphibianCard'
 
+{/* eslint-disable */}
 
 const About = () => {
   const [amphibians, setAmphibians] = useState('')
@@ -38,7 +39,7 @@ const About = () => {
         </Row>
         <Row className="justify-content-center">
           <Col xs="4" sm="9">
-            <h4>The <span className="mainPageSpan">loss and degradation of wetland habitat</span> has hit amphibians hard, with 40% of species declining worldwide according to a 2019 UN report, and the <span className="mainPageSpan">UK is no exception</span>. Unfortunately, we just <span className="mainPageSpan"> don`&apos`t know </span> what the status of amphibians in the UK really is. That`&apos`s where you come in.</h4>
+            <h4>The <span className="mainPageSpan">loss and degradation of wetland habitat</span> has hit amphibians hard, with 40% of species declining worldwide according to a 2019 UN report, and the <span className="mainPageSpan">UK is no exception</span>. Unfortunately, we just <span className="mainPageSpan"> don't know </span> what the status of amphibians in the UK really is. That's where you come in.</h4>
           </Col>
         </Row>
         <Row >
@@ -77,7 +78,7 @@ const About = () => {
           <Col xs="4" sm="9">
             <h4>Amphibians are <span className="mainPageSpan">incredibly important</span> animals. They act as both predator and prey, eating pest insects and invertebrates like slugs and snails, as well as providing <span className="mainPageSpan">vital food</span> for birds and other animals like otters, badgers and even hedgehogs.</h4>
             <div className="mainPageContentSpace"></div>
-            <h4> There are seven amphibian species native to the UK? And they`&apos`re all<span className="mainPageSpan"> unique</span> and important in their own way</h4>
+            <h4> There are seven amphibian species native to the UK? And they're all<span className="mainPageSpan"> unique</span> and important in their own way</h4>
           </Col>
         </Row>
         <Row >
