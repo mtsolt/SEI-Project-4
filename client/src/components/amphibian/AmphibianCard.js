@@ -12,7 +12,7 @@ const AmphibianCard = ({ id, common_name, image }) => {
       <Row>
         <div className="indexBuffer"></div>
         <Col xs={12}>
-          <Button href={`http://localhost:3000/amphibian/${id}`} style={{
+          <Button href={`/amphibian/${id}`} style={{
             minHeight: '300px',
             backgroundImage: `url("${image}.jpeg")`,
             backgroundSize: 'cover',
