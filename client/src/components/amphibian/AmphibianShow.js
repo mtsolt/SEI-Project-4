@@ -13,7 +13,7 @@ const AmphibianShow = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`/api/amphibians/${pk}`)
+        const { data } = await axios.get(`/api/amphibians/${pk}/`)
         console.log('DATA>>>', data)
         setAmphibian(data)
       } catch (err) {

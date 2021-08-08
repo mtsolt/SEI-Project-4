@@ -1,16 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-// useHistory, Link
 import axios from 'axios'
-// import { getTokenFromLocalStorage, getPayload } from '../../helpers/auth'
-
 import { Container } from 'react-bootstrap'
 import SightingsForm from './SightingsForm'
-// import axios from 'axios'
-// import { useHistory } from 'react-router-dom'
-// import { getTokenFromLocalStorage } from '../helpers/auth'
-// import { ImageUploadField } from '../ImageUploadField'
+
 
 
 const SingleSurvey = () => {

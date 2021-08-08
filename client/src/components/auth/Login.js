@@ -120,7 +120,7 @@ const Login = () => {
           </Container>
         </Modal.Body>
         <Modal.Footer className="justify-content-center">
-          <p>Don`&apos;`t have an account? <Link onClick={() => handleClose()} to={'auth/register'}> Sign up here</Link></p>
+          <p>Don&apos;t have an account? <Link onClick={() => handleClose()} to={'auth/register'}> Sign up here</Link></p>
         </Modal.Footer>
       </Modal>
     </>

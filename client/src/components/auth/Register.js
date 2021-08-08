@@ -221,6 +221,7 @@ const Register = () => {
           </Form>
         </Col>
       </Row>
+      <Col className="mainPageSpace"></Col>
     </Container>
 
   )
